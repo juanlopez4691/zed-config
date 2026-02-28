@@ -1,5 +1,33 @@
 [
     {
+        "label": "PHPUnit (All Tests)",
+        "command": "php artisan test",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
+        "label": "PHPUnit (Current File)",
+        "command": "php artisan test ${ZED_FILE}",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
+        "label": "PHPUnit (Parallel)",
+        "command": "php artisan test --parallel",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
+        "label": "PHPUnit (Coverage)",
+        "command": "php artisan test --coverage",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
         "label": "Pest (All Tests)",
         "command": "./vendor/bin/pest",
         "use_new_terminal": false,
