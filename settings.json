@@ -356,6 +356,7 @@
     "show_completions_on_input": true,
     "show_completion_documentation": true,
     "edit_predictions": {
+        "provider": "copilot",
         "disabled_globs": [".env"],
     },
     "telemetry": {
