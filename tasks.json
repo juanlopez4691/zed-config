@@ -20,4 +20,15 @@
         "hide": "always",
         "shell": "system",
     },
+    {
+        "label": "Github PRs",
+        "command": "gh",
+        "args": ["dash"],
+        "env": {},
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+        "hide": "always",
+        "shell": "system",
+    },
 ]
