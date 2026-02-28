@@ -1,5 +1,12 @@
 [
     {
+        "label": "Pest (All Tests)",
+        "command": "./vendor/bin/pest",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
         "label": "NPM Dev",
         "command": "npm run dev",
         "use_new_terminal": true,
