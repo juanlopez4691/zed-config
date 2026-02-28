@@ -1,5 +1,26 @@
 [
     {
+        "label": "NPM Dev",
+        "command": "npm run dev",
+        "use_new_terminal": true,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
+        "label": "NPM Build",
+        "command": "npm run build",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
+        "label": "NPM Install",
+        "command": "npm install",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
         "label": "Composer Install",
         "command": "composer install",
         "use_new_terminal": false,
