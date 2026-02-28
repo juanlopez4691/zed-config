@@ -1,4 +1,9 @@
 {
+    "agent_servers": {
+        "github-copilot": {
+            "type": "registry",
+        },
+    },
     "multi_cursor_modifier": "cmd_or_ctrl",
     "extend_comment_on_newline": false,
     "close_on_file_delete": true,
