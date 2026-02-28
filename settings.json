@@ -1,4 +1,56 @@
 {
+    "context_servers": {
+        "chrome-devtools-mcp-zed": {
+            "enabled": true,
+            "remote": false,
+            "settings": {
+                "browser_url": null,
+                "ws_endpoint": null,
+                "ws_headers": null,
+                "auto_connect": null,
+                "channel": null,
+                "headless": null,
+                "isolated": null,
+                "user_data_dir": null,
+                "viewport": null,
+                "executable_path": null,
+                "chrome_arg": [],
+                "proxy_server": null,
+                "accept_insecure_certs": null,
+                "category_emulation": null,
+                "category_performance": null,
+                "category_network": null,
+                "log_file": null,
+                "extra_args": [],
+            },
+        },
+        "mcp-server-context7": {
+            "enabled": true,
+            "remote": false,
+            "settings": {
+                "context7_api_key": "${CONTEXT7_API_KEY}",
+            },
+        },
+        "mcp-server-github": {
+            "enabled": true,
+            "remote": true,
+            "settings": {
+                "url": "https://api.githubcopilot.com/mcp/",
+                "requestInit": {
+                    "headers": {
+                        "Authorization": "Bearer ${ZED_GITHUB_MCP_TOKEN}",
+                    },
+                },
+            },
+        },
+        "mcp-server-brave-search": {
+            "enabled": true,
+            "remote": false,
+            "settings": {
+                "brave_api_key": "${BRAVE_SEARCH_API_KEY}",
+            },
+        },
+    },
     "agent_servers": {
         "opencode": {
             "type": "registry",
