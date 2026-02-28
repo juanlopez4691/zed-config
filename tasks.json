@@ -173,28 +173,6 @@
         "allow_concurrent_runs": false,
         "reveal": "always",
     },
-    // LazyGit
-    {
-        "label": "LazyGit",
-        "command": "lazygit",
-        "env": {},
-        "use_new_terminal": false,
-        "allow_concurrent_runs": false,
-        "reveal": "always",
-        "hide": "always",
-        "shell": "system",
-    },
-    {
-        "label": "LazyGit log",
-        "command": "lazygit",
-        "args": ["log"],
-        "env": {},
-        "use_new_terminal": false,
-        "allow_concurrent_runs": false,
-        "reveal": "always",
-        "hide": "always",
-        "shell": "system",
-    },
     {
         "label": "Github PRs",
         "command": "gh",

@@ -7,21 +7,6 @@
             // Tasks
             "cmd-shift-k": "task::Spawn",
             "cmd-k cmd-s": "workspace::SaveAll",
-            // Lazygit
-            "space g g": [
-                "task::Spawn",
-                {
-                    "task_name": "LazyGit",
-                    "reveal_target": "center",
-                },
-            ],
-            "space g o": [
-                "task::Spawn",
-                {
-                    "task_name": "LazyGit log",
-                    "reveal_target": "center",
-                },
-            ],
             // Github dash
             "space  g p": [
                 "task::Spawn",
