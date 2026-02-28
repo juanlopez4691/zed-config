@@ -1,5 +1,26 @@
 [
     {
+        "label": "Pint Format (All)",
+        "command": "./vendor/bin/pint",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
+        "label": "Pint Format (Dirty)",
+        "command": "./vendor/bin/pint --dirty",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
+        "label": "Pint Test",
+        "command": "./vendor/bin/pint --test",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
         "label": "PHPUnit (All Tests)",
         "command": "php artisan test",
         "use_new_terminal": false,
