@@ -71,6 +71,8 @@
     },
     "load_direnv": "shell_hook",
     "agent": {
+        "use_modifier_to_send": true,
+        "single_file_review": true,
         "default_profile": "ask",
         "default_model": {
             "provider": "copilot_chat",
