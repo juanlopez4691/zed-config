@@ -1,5 +1,26 @@
 [
     {
+        "label": "Composer Install",
+        "command": "composer install",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
+        "label": "Composer Update",
+        "command": "composer update",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
+        "label": "Composer Dump Autoload",
+        "command": "composer dump-autoload",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+    },
+    {
         "label": "LazyGit",
         "command": "lazygit",
         "env": {},
