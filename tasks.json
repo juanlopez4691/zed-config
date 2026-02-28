@@ -1,4 +1,5 @@
 [
+    // Artisan
     {
         "label": "Artisan Serve",
         "command": "php artisan serve",
@@ -69,6 +70,7 @@
         "allow_concurrent_runs": false,
         "reveal": "always",
     },
+    // Pint
     {
         "label": "Pint Format (All)",
         "command": "./vendor/bin/pint",
@@ -90,6 +92,7 @@
         "allow_concurrent_runs": false,
         "reveal": "always",
     },
+    // PHPUnit
     {
         "label": "PHPUnit (All Tests)",
         "command": "sail artisan test",
@@ -118,6 +121,7 @@
         "allow_concurrent_runs": false,
         "reveal": "always",
     },
+    // Pest
     {
         "label": "Pest (All Tests)",
         "command": "./vendor/bin/pest",
@@ -125,6 +129,7 @@
         "allow_concurrent_runs": false,
         "reveal": "always",
     },
+    // NPM
     {
         "label": "NPM Dev",
         "command": "npm run dev",
@@ -146,6 +151,7 @@
         "allow_concurrent_runs": false,
         "reveal": "always",
     },
+    // Composer
     {
         "label": "Composer Install",
         "command": "composer install",
@@ -167,6 +173,7 @@
         "allow_concurrent_runs": false,
         "reveal": "always",
     },
+    // LazyGit
     {
         "label": "LazyGit",
         "command": "lazygit",
