@@ -133,10 +133,10 @@
     {
         "context": "ProjectPanel",
         "bindings": {
-            "a": "project_panel::NewFile",
-            "shift-a": "project_panel::NewDirectory",
-            "r": "project_panel::Rename",
-            "delete": "project_panel::Delete",
+            "cmd-n": "project_panel::NewFile",
+            "cmd-shift-n": "project_panel::NewDirectory",
+            "cmd-r": "project_panel::Rename",
+            "cmd-delete": "project_panel::Delete",
             "backspace": "project_panel::Delete",
             "cmd-c": "project_panel::Copy",
             "cmd-x": "project_panel::Cut",
