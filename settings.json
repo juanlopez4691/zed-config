@@ -1,5 +1,8 @@
 {
     "agent_servers": {
+        "opencode": {
+            "type": "registry",
+        },
         "github-copilot": {
             "type": "registry",
         },
