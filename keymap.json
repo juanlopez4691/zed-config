@@ -7,14 +7,6 @@
             // Tasks
             "cmd-shift-k": "task::Spawn",
             "cmd-k cmd-s": "workspace::SaveAll",
-            // Github dash
-            "space  g p": [
-                "task::Spawn",
-                {
-                    "task_name": "Github PRs",
-                    "reveal_target": "center",
-                },
-            ],
         },
     },
     {
