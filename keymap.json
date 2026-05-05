@@ -89,11 +89,6 @@
             "space g t": "editor::GoToTypeDefinition",
             "space g T": "editor::GoToTypeDefinitionSplit",
             "space g r": "editor::FindAllReferences",
-            "] d": "editor::GoToDiagnostic",
-            "[ d": "editor::GoToPreviousDiagnostic",
-            // TODO: Go to next/prev error
-            "] e": "editor::GoToDiagnostic",
-            "[ e": "editor::GoToPreviousDiagnostic",
             // Symbol search
             "space c s": "outline::Toggle",
             "space c S": "project_symbols::Toggle",
