@@ -1,0 +1,11 @@
+{
+  "Action": {
+    "prefix": "wpact",
+    "body": [
+      "#[Action('${1:hook}', accepted_args: ${2:args_count}, ${3:priority})",
+      "public function ${4:name} (${5:args}): ${6:return} {",
+      "\t${7:body}",
+      "}"
+    ]
+  }
+}
