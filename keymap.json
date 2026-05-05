@@ -1,151 +1,151 @@
 [
-    {
-        "context": "Workspace",
-        "bindings": {
-            // Terminal
-            "ctrl-\\": "terminal_panel::Toggle",
-            "space t t": "terminal_panel::Toggle",
-            // Tasks
-            "cmd-shift-k": "task::Spawn",
-            "cmd-k cmd-s": "workspace::SaveAll",
-        },
+  {
+    "context": "Workspace",
+    "bindings": {
+      // Terminal
+      "ctrl-\\": "terminal_panel::Toggle",
+      "space t t": "terminal_panel::Toggle",
+      // Tasks
+      "cmd-shift-k": "task::Spawn",
+      "cmd-k cmd-s": "workspace::SaveAll",
     },
-    {
-        "context": "Editor",
-        "bindings": {
-            "cmd-shift-k": "task::Spawn",
-        },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-shift-k": "task::Spawn",
     },
-    {
-        "context": "Editor && vim_mode == insert",
-        "bindings": {
-            "alt-h": "vim::Left",
-            "alt-l": "vim::Right",
-        },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "alt-h": "vim::Left",
+      "alt-l": "vim::Right",
     },
-    {
-        "context": "vim_mode == normal || vim_mode == insert || vim_mode == visual || vim_mode == operator",
-        "bindings": {
-            "alt-k": "editor::MoveLineUp",
-            "alt-j": "editor::MoveLineDown",
-            "alt-shift-k": "editor::DuplicateLineDown",
-            "alt-shift-j": "editor::DuplicateLineUp",
-            "ctrl-/": "editor::ToggleComments",
-            "alt-left": "vim::ResizePaneLeft",
-            "alt-right": "vim::ResizePaneRight",
-            "alt-up": "vim::ResizePaneUp",
-            "alt-down": "vim::ResizePaneDown",
-        },
+  },
+  {
+    "context": "vim_mode == normal || vim_mode == insert || vim_mode == visual || vim_mode == operator",
+    "bindings": {
+      "alt-k": "editor::MoveLineUp",
+      "alt-j": "editor::MoveLineDown",
+      "alt-shift-k": "editor::DuplicateLineDown",
+      "alt-shift-j": "editor::DuplicateLineUp",
+      "ctrl-/": "editor::ToggleComments",
+      "alt-left": "vim::ResizePaneLeft",
+      "alt-right": "vim::ResizePaneRight",
+      "alt-up": "vim::ResizePaneUp",
+      "alt-down": "vim::ResizePaneDown",
     },
-    {
-        "context": "VimControl && !menu",
-        "bindings": {
-            "left": "vim::WrappingLeft",
-            "right": "vim::WrappingRight",
-            "h": "vim::WrappingLeft",
-            "l": "vim::WrappingRight",
-        },
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "left": "vim::WrappingLeft",
+      "right": "vim::WrappingRight",
+      "h": "vim::WrappingLeft",
+      "l": "vim::WrappingRight",
     },
-    {
-        "context": "!Editor",
-        "bindings": {
-            "space f e": "project_panel::Toggle",
-        },
+  },
+  {
+    "context": "!Editor",
+    "bindings": {
+      "space f e": "project_panel::Toggle",
     },
-    {
-        "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
-        "bindings": {
-            "space f e": "project_panel::Toggle",
-            // Sneak jump
-            "s": "vim::PushSneak",
-            "shift-s": "vim::PushSneakBackward",
-            "w": "vim::NextSubwordStart",
-            "b": "vim::PreviousSubwordStart",
-            "e": "vim::NextSubwordEnd",
-            "g e": "vim::PreviousSubwordEnd",
-            "space space": "file_finder::Toggle",
-            // Split panes
-            "space w v": "pane::SplitVertical",
-            "space w s": "pane::SplitHorizontal",
-            "space w d": "pane::CloseActiveItem",
-            // Pane navigation
-            "ctrl-h": "workspace::ActivatePaneLeft",
-            "ctrl-l": "workspace::ActivatePaneRight",
-            "ctrl-k": "workspace::ActivatePaneUp",
-            "ctrl-j": "workspace::ActivatePaneDown",
-            // Pane movement
-            "ctrl-shift-h": "workspace::MovePaneLeft",
-            "ctrl-shift-l": "workspace::MovePaneRight",
-            "ctrl-shift-k": "workspace::MovePaneUp",
-            "ctrl-shift-j": "workspace::MovePaneDown",
-            // LSP
-            "space c a": "editor::ToggleCodeActions",
-            "space .": "editor::ToggleCodeActions",
-            "space c r": "editor::Rename",
-            "space g d": "editor::GoToDefinition",
-            "space g D": "editor::GoToDefinitionSplit",
-            "space g i": "editor::GoToImplementation",
-            "space g I": "editor::GoToImplementationSplit",
-            "space g t": "editor::GoToTypeDefinition",
-            "space g T": "editor::GoToTypeDefinitionSplit",
-            "space g r": "editor::FindAllReferences",
-            // Symbol search
-            "space c s": "outline::Toggle",
-            "space c S": "project_symbols::Toggle",
-            // Diagnostic
-            "space x x": "diagnostics::Deploy",
-            // Git
-            "space g g": "git_panel::Toggle",
-            "space g l": "git_graph::Open",
-        },
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      "space f e": "project_panel::Toggle",
+      // Sneak jump
+      "s": "vim::PushSneak",
+      "shift-s": "vim::PushSneakBackward",
+      "w": "vim::NextSubwordStart",
+      "b": "vim::PreviousSubwordStart",
+      "e": "vim::NextSubwordEnd",
+      "g e": "vim::PreviousSubwordEnd",
+      "space space": "file_finder::Toggle",
+      // Split panes
+      "space w v": "pane::SplitVertical",
+      "space w s": "pane::SplitHorizontal",
+      "space w d": "pane::CloseActiveItem",
+      // Pane navigation
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      // Pane movement
+      "ctrl-shift-h": "workspace::MovePaneLeft",
+      "ctrl-shift-l": "workspace::MovePaneRight",
+      "ctrl-shift-k": "workspace::MovePaneUp",
+      "ctrl-shift-j": "workspace::MovePaneDown",
+      // LSP
+      "space c a": "editor::ToggleCodeActions",
+      "space .": "editor::ToggleCodeActions",
+      "space c r": "editor::Rename",
+      "space g d": "editor::GoToDefinition",
+      "space g D": "editor::GoToDefinitionSplit",
+      "space g i": "editor::GoToImplementation",
+      "space g I": "editor::GoToImplementationSplit",
+      "space g t": "editor::GoToTypeDefinition",
+      "space g T": "editor::GoToTypeDefinitionSplit",
+      "space g r": "editor::FindAllReferences",
+      // Symbol search
+      "space c s": "outline::Toggle",
+      "space c S": "project_symbols::Toggle",
+      // Diagnostic
+      "space x x": "diagnostics::Deploy",
+      // Git
+      "space g g": "git_panel::Toggle",
+      "space g l": "git_graph::Open",
     },
-    {
-        "context": "Dock",
-        "bindings": {
-            "ctrl-h": "workspace::ActivatePaneLeft",
-            "ctrl-l": "workspace::ActivatePaneRight",
-            "ctrl-k": "workspace::ActivatePaneUp",
-            "ctrl-j": "workspace::ActivatePaneDown",
-        },
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
     },
-    {
-        "context": "Editor",
-        "bindings": {
-            // "cmd-shift-i": "editor::Format",
-            // "cmd-d": "editor::SelectNext",
-            // "cmd-shift-l": "editor::SelectAllMatches",
-            // "cmd-/": "editor::ToggleComments",
-            // "cmd-shift-d": "editor::DuplicateLineDown",
-            // "cmd-shift-k": "editor::DeleteLine",
-            // "alt-up": "editor::MoveLineUp",
-            // "alt-down": "editor::MoveLineDown",
-        },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "cmd-shift-i": "editor::Format",
+      // "cmd-d": "editor::SelectNext",
+      // "cmd-shift-l": "editor::SelectAllMatches",
+      // "cmd-/": "editor::ToggleComments",
+      // "cmd-shift-d": "editor::DuplicateLineDown",
+      // "cmd-shift-k": "editor::DeleteLine",
+      // "alt-up": "editor::MoveLineUp",
+      // "alt-down": "editor::MoveLineDown",
     },
-    {
-        "context": "Terminal",
-        "bindings": {
-            "cmd-t": "terminal_panel::ToggleFocus",
-            "cmd-w": "pane::CloseActiveItem",
-            "cmd-k": "terminal::Clear",
-        },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-t": "terminal_panel::ToggleFocus",
+      "cmd-w": "pane::CloseActiveItem",
+      "cmd-k": "terminal::Clear",
     },
-    {
-        "context": "ProjectPanel",
-        "bindings": {
-            "cmd-n": "project_panel::NewFile",
-            "cmd-shift-n": "project_panel::NewDirectory",
-            "cmd-r": "project_panel::Rename",
-            "cmd-delete": "project_panel::Delete",
-            "backspace": "project_panel::Delete",
-            "cmd-c": "project_panel::Copy",
-            "cmd-x": "project_panel::Cut",
-            "cmd-v": "project_panel::Paste",
-        },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-n": "project_panel::NewFile",
+      "cmd-shift-n": "project_panel::NewDirectory",
+      "cmd-r": "project_panel::Rename",
+      "cmd-delete": "project_panel::Delete",
+      "backspace": "project_panel::Delete",
+      "cmd-c": "project_panel::Copy",
+      "cmd-x": "project_panel::Cut",
+      "cmd-v": "project_panel::Paste",
     },
-    {
-        "context": "((VimControl && !menu) || (!Editor && !Terminal))",
-        "bindings": {
-            "ctrl-w m": "vim::MaximizePane",
-        },
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w m": "vim::MaximizePane",
     },
+  },
 ]
