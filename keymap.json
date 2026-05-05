@@ -94,6 +94,9 @@
             "space c S": "project_symbols::Toggle",
             // Diagnostic
             "space x x": "diagnostics::Deploy",
+            // Git
+            "space g g": "git_panel::Toggle",
+            "space g l": "git_graph::Open",
         },
     },
     {
