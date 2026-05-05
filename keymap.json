@@ -4,6 +4,7 @@
         "bindings": {
             // Terminal
             "ctrl-\\": "terminal_panel::Toggle",
+            "space t t": "terminal_panel::Toggle",
             // Tasks
             "cmd-shift-k": "task::Spawn",
             "cmd-k cmd-s": "workspace::SaveAll",
