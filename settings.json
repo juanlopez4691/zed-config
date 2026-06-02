@@ -220,7 +220,9 @@
     "Blade": {
       "tab_size": 4,
       "hard_tabs": false,
-      "language_servers": ["tailwindcss-language-server"],
+      "language_servers": [
+        "tailwindcss-language-server"
+      ],
       "semantic_tokens": "combined",
       "document_symbols": "on",
     },
@@ -258,22 +260,33 @@
       "format_on_save": "on",
     },
     "Python": {
-      "language_servers": ["ruff", "basedpyright"],
+      "language_servers": [
+        "ruff",
+        "basedpyright"
+      ],
       "format_on_save": "on",
       "formatter": [
         {
-          "language_server": { "name": "ruff" },
+          "language_server": {
+            "name": "ruff"
+          },
         },
-        { "code_action": "source.organizeImports.ruff" },
+        {
+          "code_action": "source.organizeImports.ruff"
+        },
       ],
     },
     "Lua": {
-      "language_servers": ["emmylua"],
+      "language_servers": [
+        "emmylua"
+      ],
       "format_on_save": "on",
       "formatter": {
         "external": {
           "command": "stylua",
-          "arguments": ["-"],
+          "arguments": [
+            "-"
+          ],
         },
       },
     },
@@ -332,7 +345,10 @@
             "**/_ide_helper*.php",
             "**/.phpstorm.meta.php",
           ],
-          "associations": ["*.php", "*.blade.php"],
+          "associations": [
+            "*.php",
+            "*.blade.php"
+          ],
         },
         "stubs": [
           "apache",
@@ -458,7 +474,10 @@
       "**/*.blade.blade.html",
       "**/*.blade.blade.htm",
     ],
-    "Dockerfile": ["Dockerfile", "Dockerfile.*"],
+    "Dockerfile": [
+      "Dockerfile",
+      "Dockerfile.*"
+    ],
   },
   "gutter": {
     "min_line_number_digits": 0,
@@ -479,7 +498,9 @@
   "show_completion_documentation": true,
   "edit_predictions": {
     "provider": "copilot",
-    "disabled_globs": [".env"],
+    "disabled_globs": [
+      ".env"
+    ],
   },
   "telemetry": {
     "diagnostics": false,
