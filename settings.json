@@ -1,428 +1,491 @@
 {
-    "context_servers": {
-        "chrome-devtools-mcp-zed": {
-            "enabled": true,
-            "remote": false,
-            "settings": {
-                "browser_url": null,
-                "ws_endpoint": null,
-                "ws_headers": null,
-                "auto_connect": null,
-                "channel": null,
-                "headless": null,
-                "isolated": null,
-                "user_data_dir": null,
-                "viewport": null,
-                "executable_path": null,
-                "chrome_arg": [],
-                "proxy_server": null,
-                "accept_insecure_certs": null,
-                "category_emulation": null,
-                "category_performance": null,
-                "category_network": null,
-                "log_file": null,
-                "extra_args": [],
-            },
-        },
-        "mcp-server-context7": {
-            "enabled": true,
-            "remote": false,
-            "settings": {
-                "context7_api_key": "${CONTEXT7_API_KEY}",
-            },
-        },
-        "mcp-server-github": {
-            "enabled": true,
-            "remote": true,
-            "settings": {
-                "url": "https://api.githubcopilot.com/mcp/",
-                "requestInit": {
-                    "headers": {
-                        "Authorization": "Bearer ${ZED_GITHUB_MCP_TOKEN}",
-                    },
-                },
-            },
-        },
-        "mcp-server-brave-search": {
-            "enabled": true,
-            "remote": false,
-            "settings": {
-                "brave_api_key": "${BRAVE_SEARCH_API_KEY}",
-            },
-        },
+  "project_panel": {
+    "dock": "right",
+    "bold_folder_labels": true,
+    "starts_open": false,
+    "auto_fold_dirs": false,
+  },
+  "file_finder": {
+    "modal_max_width": "small",
+  },
+  "outline_panel": {
+    "dock": "right",
+    "default_width": 240,
+  },
+  "git_panel": {
+    "tree_view": true,
+    "dock": "left",
+  },
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true,
+      "delay_ms": 600,
     },
-    "agent_servers": {
-        "opencode": {
-            "type": "registry",
-        },
-        "github-copilot": {
-            "type": "registry",
-        },
-    },
-    "multi_cursor_modifier": "cmd_or_ctrl",
-    "extend_comment_on_newline": false,
-    "close_on_file_delete": true,
-    "when_closing_with_no_tabs": "keep_window_open",
-    "restore_on_file_reopen": true,
-    "restore_on_startup": "launchpad",
-    "session": {
-        "trust_all_worktrees": true,
-        "restore_unsaved_buffers": true,
-    },
-    "auto_install_extensions": {
-        "php": true,
-        "blade": true,
-        "env": true,
-        "tailwindcss": true,
-    },
-    "notification_panel": {
-        "dock": "bottom",
-        "button": false,
-    },
-    "git_panel": {
-        "tree_view": true,
-    },
-    "search": {
-        "center_on_match": true,
-    },
-    "use_smartcase_search": true,
-    "diagnostics": {
-        "inline": {
-            "enabled": true,
-        },
-    },
-    "prettier": {
-        "allowed": true,
-    },
-    "colorize_brackets": true,
-    "vim": {
-        "use_smartcase_find": true,
-        "toggle_relative_line_numbers": true,
-    },
-    "title_bar": {
-        "show_menus": false,
-        "show_branch_icon": true,
-        "show_branch_name": true,
-        "show_user_menu": false,
-        "show_onboarding_banner": false,
-    },
+  },
+  "diff_view_style": "split",
+  "terminal": {
     "toolbar": {
-        "code_actions": true,
-        "quick_actions": false,
+      "breadcrumbs": true,
     },
-    "show_signature_help_after_edits": true,
-    "sticky_scroll": {
-        "enabled": false,
+    "copy_on_select": true,
+    "option_as_meta": true,
+    "font_weight": 300.0,
+    "shell": "system",
+    "font_family": "JetBrainsMono Nerd Font",
+    "font_size": 16,
+    "line_height": {
+      "custom": 1.5,
     },
-    "autoscroll_on_clicks": true,
-    "horizontal_scroll_margin": 16.0,
-    "scroll_beyond_last_line": "vertical_scroll_margin",
-    "which_key": {
-        "delay_ms": 0,
-        "enabled": true,
+    "working_directory": "current_project_directory",
+  },
+  "agent": {
+    "dock": "right",
+    "use_modifier_to_send": true,
+    "single_file_review": true,
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1",
+      "enable_thinking": false,
     },
-    "load_direnv": "shell_hook",
-    "agent": {
-        "use_modifier_to_send": true,
-        "single_file_review": true,
-        "default_profile": "ask",
-        "default_model": {
-            "provider": "copilot_chat",
-            "model": "gpt-4.1",
-            "enable_thinking": false,
+    "favorite_models": [],
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1",
+      "enable_thinking": false,
+    },
+    "model_parameters": [],
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "context_servers": {
+    "chrome-devtools-mcp-zed": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "browser_url": null,
+        "ws_endpoint": null,
+        "ws_headers": null,
+        "auto_connect": null,
+        "channel": null,
+        "headless": null,
+        "isolated": null,
+        "user_data_dir": null,
+        "viewport": null,
+        "executable_path": null,
+        "chrome_arg": [],
+        "proxy_server": null,
+        "accept_insecure_certs": null,
+        "category_emulation": null,
+        "category_performance": null,
+        "category_network": null,
+        "log_file": null,
+        "extra_args": [],
+      },
+    },
+    "mcp-server-context7": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "context7_api_key": "${CONTEXT7_API_KEY}",
+      },
+    },
+    "mcp-server-github": {
+      "enabled": true,
+      "remote": true,
+      "settings": {
+        "url": "https://api.githubcopilot.com/mcp/",
+        "requestInit": {
+          "headers": {
+            "Authorization": "Bearer ${ZED_GITHUB_MCP_TOKEN}",
+          },
         },
-        "favorite_models": [],
-        "inline_assistant_model": {
-            "provider": "copilot_chat",
-            "model": "gpt-4.1",
-            "enable_thinking": false,
+      },
+    },
+    "mcp-server-brave-search": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "brave_api_key": "${BRAVE_SEARCH_API_KEY}",
+      },
+    },
+  },
+  "agent_servers": {
+    "opencode": {
+      "type": "registry",
+    },
+    "github-copilot": {
+      "type": "registry",
+    },
+  },
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "extend_comment_on_newline": false,
+  "close_on_file_delete": true,
+  "when_closing_with_no_tabs": "keep_window_open",
+  "restore_on_file_reopen": true,
+  "restore_on_startup": "launchpad",
+  "session": {
+    "trust_all_worktrees": true,
+    "restore_unsaved_buffers": true,
+  },
+  "auto_install_extensions": {
+    "php": true,
+    "blade": true,
+    "env": true,
+    "tailwindcss": true,
+  },
+  "search": {
+    "center_on_match": true,
+  },
+  "use_smartcase_search": true,
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "prettier": {
+    "allowed": true,
+  },
+  "colorize_brackets": true,
+  "vim": {
+    "use_smartcase_find": true,
+    "toggle_relative_line_numbers": true,
+  },
+  "title_bar": {
+    "show_branch_status_icon": true,
+    "show_menus": false,
+    "show_branch_name": true,
+    "show_user_menu": false,
+    "show_onboarding_banner": false,
+  },
+  "toolbar": {
+    "code_actions": true,
+    "quick_actions": false,
+  },
+  "show_signature_help_after_edits": true,
+  "sticky_scroll": {
+    "enabled": false,
+  },
+  "autoscroll_on_clicks": true,
+  "horizontal_scroll_margin": 16.0,
+  "scroll_beyond_last_line": "vertical_scroll_margin",
+  "which_key": {
+    "delay_ms": 0,
+    "enabled": true,
+  },
+  "load_direnv": "shell_hook",
+  "icon_theme": "Base Charmed Icons",
+  "theme": "Catppuccin Mocha",
+  "theme_overrides": {
+    "Catppuccin Mocha": {
+      "editor.background": "#11111b",
+      "editor.gutter.background": "#11111b",
+      "toolbar.background": "#11111b",
+      "syntax": {
+        "comment": {
+          "font_style": "italic",
         },
-        "model_parameters": [],
+      },
     },
-    "icon_theme": "Base Charmed Icons",
-    "theme": "Catppuccin Mocha",
-    "theme_overrides": {
-        "Catppuccin Mocha": {
-            "editor.background": "#11111b",
-            "editor.gutter.background": "#11111b",
-            "toolbar.background": "#11111b",
-            "syntax": {
-                "comment": {
-                    "font_style": "italic",
-                },
-            },
+  },
+  "ui_font_size": 18,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 16,
+  "buffer_font_weight": 300,
+  "buffer_line_height": {
+    "custom": 1.7,
+  },
+  "tab_size": 4,
+  "hard_tabs": false,
+  "soft_wrap": "none",
+  "show_whitespaces": "selection",
+  "remove_trailing_whitespace_on_save": true,
+  "ensure_final_newline_on_save": true,
+  "format_on_save": "on",
+  "languages": {
+    "PHP": {
+      "tab_size": 4,
+      "hard_tabs": false,
+      "format_on_save": "off",
+      "document_symbols": "on",
+      "language_servers": [
+        "intelephense",
+        "!phpactor",
+        "!phptools",
+        "tailwindcss-language-server",
+      ],
+    },
+    "Blade": {
+      "tab_size": 4,
+      "hard_tabs": false,
+      "language_servers": ["tailwindcss-language-server"],
+      "semantic_tokens": "combined",
+      "document_symbols": "on",
+    },
+    "Twig": {
+      "formatter": "prettier",
+      "language_servers": [
+        "tailwindcss-language-server",
+        "Twig Language Server",
+      ],
+    },
+    "JavaScript": {
+      "formatter": "prettier",
+      "tab_size": 2,
+      "format_on_save": "on",
+    },
+    "TypeScript": {
+      "formatter": "prettier",
+      "tab_size": 2,
+      "format_on_save": "on",
+    },
+    "Vue.js": {
+      "tab_size": 2,
+      "format_on_save": "on",
+    },
+    "CSS": {
+      "tab_size": 2,
+      "format_on_save": "on",
+      "language_servers": [
+        "tailwindcss-intellisense-css",
+        "!vscode-css-language-server",
+      ],
+    },
+    "JSON": {
+      "tab_size": 2,
+      "format_on_save": "on",
+    },
+    "Python": {
+      "language_servers": ["ruff", "basedpyright"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "language_server": { "name": "ruff" },
         },
+        { "code_action": "source.organizeImports.ruff" },
+      ],
     },
-    "ui_font_size": 18,
-    "buffer_font_family": "JetBrainsMono Nerd Font",
-    "buffer_font_size": 16,
-    "buffer_font_weight": 300,
-    "buffer_line_height": {
-        "custom": 1.7,
+    "Lua": {
+      "language_servers": ["emmylua"],
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "stylua",
+          "arguments": ["-"],
+        },
+      },
     },
-    "tab_size": 4,
-    "hard_tabs": false,
-    "soft_wrap": "none",
-    "show_whitespaces": "selection",
-    "remove_trailing_whitespace_on_save": true,
-    "ensure_final_newline_on_save": true,
-    "format_on_save": "on",
-    "languages": {
-        "PHP": {
-            "tab_size": 4,
-            "hard_tabs": false,
-            "format_on_save": "off",
-            "language_servers": [
-                "intelephense",
-                "!phpactor",
-                "!phptools",
-                "tailwindcss-language-server",
+  },
+  "lsp": {
+    "typescript-language-server": {
+      "settings": {
+        "preferences": {
+          "includeCompletionsForModuleExports": true,
+        },
+      },
+    },
+    "tailwindcss-language-server": {
+      "settings": {
+        "tailwindCSS": {
+          "emmetCompletions": true,
+          "includeLanguages": {
+            "blade": "html",
+            "php": "html",
+            "twig": "html",
+            "plaintext": "html",
+          },
+          "experimental": {
+            "classRegex": [
+              "class=\"([^\"]*)\"",
+              "class='([^']*)'",
+              "class=\\\"([^\\\"]*)\\\"",
+              "@class\\(\\[([^\\]]*)\\]\\)",
             ],
+          },
         },
-        "Blade": {
-            "tab_size": 4,
-            "hard_tabs": false,
-            "language_servers": ["tailwindcss-language-server"],
-        },
-        "Twig": {
-            "formatter": "prettier",
-            "language_servers": [
-                "tailwindcss-language-server",
-                "Twig Language Server",
-            ],
-        },
-        "JavaScript": {
-            "formatter": "prettier",
-            "tab_size": 2,
-            "format_on_save": "on",
-        },
-        "TypeScript": {
-            "formatter": "prettier",
-            "tab_size": 2,
-            "format_on_save": "on",
-        },
-        "Vue.js": {
-            "tab_size": 2,
-            "format_on_save": "on",
-        },
-        "CSS": {
-            "tab_size": 2,
-            "format_on_save": "on",
-            "language_servers": [
-                "tailwindcss-intellisense-css",
-                "!vscode-css-language-server",
-            ],
-        },
-        "JSON": {
-            "tab_size": 2,
-            "format_on_save": "on",
-        },
+      },
     },
-    "lsp": {
-        "typescript-language-server": {
-            "settings": {
-                "preferences": {
-                    "includeCompletionsForModuleExports": true,
-                },
-            },
+    "laravel-lsp": {
+      "settings": {
+        "autoCompleteDebounce": 200,
+        "blade": {
+          "directiveSpacing": false,
         },
-        "tailwindcss-language-server": {
-            "settings": {
-                "tailwindCSS": {
-                    "emmetCompletions": true,
-                    "includeLanguages": {
-                        "blade": "html",
-                        "php": "html",
-                        "twig": "html",
-                        "plaintext": "html",
-                    },
-                    "experimental": {
-                        "classRegex": [
-                            "class=\"([^\"]*)\"",
-                            "class='([^']*)'",
-                            "class=\\\"([^\\\"]*)\\\"",
-                            "@class\\(\\[([^\\]]*)\\]\\)",
-                        ],
-                    },
-                },
-            },
+        "diagnostics": {
+          "severity": "warning",
         },
-        "intelephense": {
-            "settings": {
-                "intelephense.files.associations": ["*.php", "*.blade.php"],
-                "intelephense.environment.phpVersion": "8.4.0",
-                "license_key": "~/intelephense/licence.txt",
-                "intelephense.stubs": [
-                    "apache",
-                    "bcmath",
-                    "bz2",
-                    "calendar",
-                    "com_dotnet",
-                    "Core",
-                    "ctype",
-                    "curl",
-                    "date",
-                    "dba",
-                    "dom",
-                    "enchant",
-                    "exif",
-                    "FFI",
-                    "fileinfo",
-                    "filter",
-                    "fpm",
-                    "ftp",
-                    "gd",
-                    "gettext",
-                    "gmp",
-                    "hash",
-                    "iconv",
-                    "imap",
-                    "intl",
-                    "json",
-                    "ldap",
-                    "libxml",
-                    "mbstring",
-                    "meta",
-                    "mysqli",
-                    "oci8",
-                    "odbc",
-                    "openssl",
-                    "pcntl",
-                    "pcre",
-                    "PDO",
-                    "pdo_ibm",
-                    "pdo_mysql",
-                    "pdo_pgsql",
-                    "pdo_sqlite",
-                    "pgsql",
-                    "Phar",
-                    "posix",
-                    "pspell",
-                    "readline",
-                    "Reflection",
-                    "session",
-                    "shmop",
-                    "SimpleXML",
-                    "snmp",
-                    "soap",
-                    "sockets",
-                    "sodium",
-                    "SPL",
-                    "sqlite3",
-                    "standard",
-                    "superglobals",
-                    "sysvmsg",
-                    "sysvsem",
-                    "sysvshm",
-                    "tidy",
-                    "tokenizer",
-                    "xml",
-                    "xmlreader",
-                    "xmlrpc",
-                    "xmlwriter",
-                    "xsl",
-                    "Zend OPcache",
-                    "zip",
-                    "zlib",
-                    // Frameworks
-                    "laravel",
-                    "symfony",
-                    "wordpress",
-                    "woocommerce",
-                    "acf-pro",
-                    "wordpress-globals",
-                    "wp-cli",
-                    // Tools
-                    "phpunit",
-                    "composer",
-                ],
-            },
-        },
+      },
     },
-    "file_types": {
-        "Twig": [
-            "**/*.twig",
-            "**/*.twig.html",
-            "**/*.twig.htm",
-            "**/*.twig.twig",
-            "**/*.twig.twig.html",
-            "**/*.twig.twig.htm",
+    "intelephense": {
+      "initialization_options": {
+        "licenseKey": "~/intelephense/licence.txt",
+      },
+      "settings": {
+        "environment": {
+          "phpVersion": "8.4.0",
+        },
+        "files": {
+          "exclude": [
+            "**/stubs/**",
+            "**/_ide_helper*.php",
+            "**/.phpstorm.meta.php",
+          ],
+          "associations": ["*.php", "*.blade.php"],
+        },
+        "stubs": [
+          "apache",
+          "bcmath",
+          "bz2",
+          "calendar",
+          "com_dotnet",
+          "Core",
+          "ctype",
+          "curl",
+          "date",
+          "dba",
+          "dom",
+          "enchant",
+          "exif",
+          "FFI",
+          "fileinfo",
+          "filter",
+          "fpm",
+          "ftp",
+          "gd",
+          "gettext",
+          "gmp",
+          "hash",
+          "iconv",
+          "imap",
+          "intl",
+          "json",
+          "ldap",
+          "libxml",
+          "mbstring",
+          "meta",
+          "mysqli",
+          "oci8",
+          "odbc",
+          "openssl",
+          "pcntl",
+          "pcre",
+          "PDO",
+          "pdo_ibm",
+          "pdo_mysql",
+          "pdo_pgsql",
+          "pdo_sqlite",
+          "pgsql",
+          "Phar",
+          "posix",
+          "pspell",
+          "readline",
+          "Reflection",
+          "session",
+          "shmop",
+          "SimpleXML",
+          "snmp",
+          "soap",
+          "sockets",
+          "sodium",
+          "SPL",
+          "sqlite3",
+          "standard",
+          "superglobals",
+          "sysvmsg",
+          "sysvsem",
+          "sysvshm",
+          "tidy",
+          "tokenizer",
+          "xml",
+          "xmlreader",
+          "xmlrpc",
+          "xmlwriter",
+          "xsl",
+          "Zend OPcache",
+          "zip",
+          "zlib",
+          // Frameworks
+          "laravel",
+          "symfony",
+          "wordpress",
+          "woocommerce",
+          "acf-pro",
+          "wordpress-globals",
+          "wp-cli",
+          // Tools
+          "phpunit",
+          "composer",
         ],
-        "Blade": [
-            "**/*.blade.php",
-            "**/*.blade.html",
-            "**/*.blade.htm",
-            "**/*.blade.blade.php",
-            "**/*.blade.blade.html",
-            "**/*.blade.blade.htm",
-        ],
-        "Dockerfile": ["Dockerfile", "Dockerfile.*"],
+      },
     },
-    "git": {
-        "git_gutter": "tracked_files",
-        "inline_blame": {
-            "enabled": true,
-            "delay_ms": 600,
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lint": {
+            "enable": true,
+          },
+          "lineLength": 120,
         },
+      },
     },
-    "diff_view_style": "split",
-    "terminal": {
-        "toolbar": {
-            "breadcrumbs": true,
+    "basedpyright": {
+      "settings": {
+        "python.analysis": {
+          "diagnosticMode": "workspace",
         },
-        "copy_on_select": true,
-        "option_as_meta": true,
-        "font_weight": 300.0,
-        "shell": "system",
-        "font_family": "JetBrainsMono Nerd Font",
-        "font_size": 16,
-        "line_height": {
-            "custom": 1.5,
+        "python": {
+          "pythonPath": ".venv/bin/python3",
         },
-        "working_directory": "current_project_directory",
+      },
     },
-    "project_panel": {
-        "dock": "right",
-        "bold_folder_labels": true,
-        "starts_open": false,
-        "auto_fold_dirs": false,
-    },
-    "file_finder": {
-        "modal_max_width": "small",
-    },
-    "outline_panel": {
-        "dock": "right",
-        "default_width": 240,
-    },
-    "gutter": {
-        "min_line_number_digits": 0,
-    },
-    "collaboration_panel": {
-        "dock": "left",
-    },
-    "tabs": {
-        "close_position": "right",
-        "file_icons": true,
-        "git_status": true,
-    },
-    "scrollbar": {
-        "show": "always",
-        "git_diff": true,
-    },
-    "vertical_scroll_margin": 4.0,
-    "relative_line_numbers": "enabled",
-    "seed_search_query_from_cursor": "always",
-    "show_completions_on_input": true,
-    "show_completion_documentation": true,
-    "edit_predictions": {
-        "provider": "copilot",
-        "disabled_globs": [".env"],
-    },
-    "telemetry": {
-        "diagnostics": false,
-        "metrics": false,
-    },
-    "vim_mode": true,
-    "autosave": "on_focus_change",
-    "auto_update": true,
+  },
+  "file_types": {
+    "Twig": [
+      "**/*.twig",
+      "**/*.twig.html",
+      "**/*.twig.htm",
+      "**/*.twig.twig",
+      "**/*.twig.twig.html",
+      "**/*.twig.twig.htm",
+    ],
+    "Blade": [
+      "**/*.blade.php",
+      "**/*.blade.html",
+      "**/*.blade.htm",
+      "**/*.blade.blade.php",
+      "**/*.blade.blade.html",
+      "**/*.blade.blade.htm",
+    ],
+    "Dockerfile": ["Dockerfile", "Dockerfile.*"],
+  },
+  "gutter": {
+    "min_line_number_digits": 0,
+  },
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true,
+  },
+  "scrollbar": {
+    "show": "always",
+    "git_diff": true,
+  },
+  "vertical_scroll_margin": 4.0,
+  "relative_line_numbers": "enabled",
+  "seed_search_query_from_cursor": "always",
+  "show_completions_on_input": true,
+  "show_completion_documentation": true,
+  "edit_predictions": {
+    "provider": "copilot",
+    "disabled_globs": [".env"],
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "vim_mode": true,
+  "autosave": "on_focus_change",
+  "auto_update": true,
 }
