@@ -173,4 +173,12 @@
     "allow_concurrent_runs": false,
     "reveal": "always",
   },
+  {
+    "label": "File Finder",
+    "command": "zed \"$(tv files --keybindings 'enter=\"confirm_selection\"')\"",
+    "hide": "always",
+    "allow_concurrent_runs": true,
+    "use_new_terminal": true,
+    "reveal_target": "center",
+  },
 ]

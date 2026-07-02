@@ -8,6 +8,12 @@
       // Tasks
       "cmd-shift-k": "task::Spawn",
       "cmd-k cmd-s": "workspace::SaveAll",
+      "space f f": [
+        "task::Spawn",
+        {
+          "task_name": "File Finder",
+        },
+      ],
     },
   },
   {
