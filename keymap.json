@@ -20,6 +20,18 @@
           "task_name": "Live Grep",
         },
       ],
+      "space g z": [
+        "task::Spawn",
+        {
+          "task_name": "Lazygit",
+        },
+      ],
+      "space g o": [
+        "task::Spawn",
+        {
+          "task_name": "Lazygit log",
+        },
+      ],
     },
   },
   {
