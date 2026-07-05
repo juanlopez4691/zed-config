@@ -495,7 +495,7 @@
   "edit_predictions": {
     "mode": "eager",
     "provider": "zed",
-    "disabled_globs": [".env"],
+    "disabled_globs": [".env.*", ".env"],
     "open_ai_compatible_api": {
       "api_url": "https://opencode.ai/zen/v1/chat/completions",
       "model": "opencode/deepseek-v4-flash-free",
