@@ -128,9 +128,6 @@
       },
       "type": "registry",
     },
-    "github-copilot": {
-      "type": "registry",
-    },
   },
   "multi_cursor_modifier": "cmd_or_ctrl",
   "extend_comment_on_newline": false,
