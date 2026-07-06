@@ -4,7 +4,6 @@
     "bindings": {
       // Terminal
       "ctrl-\\": "terminal_panel::Toggle",
-      "space t t": "terminal_panel::Toggle",
       // Tasks
       "cmd-shift-k": "task::Spawn",
       "cmd-k cmd-s": "workspace::SaveAll",
@@ -14,6 +13,43 @@
     "context": "Editor",
     "bindings": {
       "cmd-shift-k": "task::Spawn",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "alt-h": "vim::Left",
+      "alt-l": "vim::Right",
+      "alt-k": "editor::MoveLineUp",
+      "alt-j": "editor::MoveLineDown",
+    },
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == insert || vim_mode == visual || vim_mode == operator)",
+    "bindings": {
+      "alt-k": "editor::MoveLineUp",
+      "alt-j": "editor::MoveLineDown",
+      "alt-shift-k": "editor::DuplicateLineDown",
+      "alt-shift-j": "editor::DuplicateLineUp",
+      "ctrl-/": "editor::ToggleComments",
+      "alt-left": "vim::ResizePaneLeft",
+      "alt-right": "vim::ResizePaneRight",
+      "alt-up": "vim::ResizePaneUp",
+      "alt-down": "vim::ResizePaneDown",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "left": "vim::WrappingLeft",
+      "right": "vim::WrappingRight",
+      "h": "vim::WrappingLeft",
+      "l": "vim::WrappingRight",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
       "space f f": [
         "task::Spawn",
         {
@@ -38,50 +74,6 @@
           "task_name": "Lazygit log",
         },
       ],
-    },
-  },
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      "alt-h": "vim::Left",
-      "alt-l": "vim::Right",
-      "alt-k": "editor::MoveLineUp",
-      "alt-j": "editor::MoveLineDown",
-    },
-  },
-  {
-    "context": "Editor && (vim_mode == normal || vim_mode == insert || vim_mode == visual || vim_mode == operator)",
-    "bindings": {
-      "space f e": "project_panel::Toggle",
-      "alt-k": "editor::MoveLineUp",
-      "alt-j": "editor::MoveLineDown",
-      "alt-shift-k": "editor::DuplicateLineDown",
-      "alt-shift-j": "editor::DuplicateLineUp",
-      "ctrl-/": "editor::ToggleComments",
-      "alt-left": "vim::ResizePaneLeft",
-      "alt-right": "vim::ResizePaneRight",
-      "alt-up": "vim::ResizePaneUp",
-      "alt-down": "vim::ResizePaneDown",
-    },
-  },
-  {
-    "context": "VimControl && !menu",
-    "bindings": {
-      "left": "vim::WrappingLeft",
-      "right": "vim::WrappingRight",
-      "h": "vim::WrappingLeft",
-      "l": "vim::WrappingRight",
-    },
-  },
-  {
-    "context": "!Editor",
-    "bindings": {
-      "space f e": "project_panel::Toggle",
-    },
-  },
-  {
-    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
-    "bindings": {
       "space f e": "project_panel::Toggle",
       // Sneak jump
       "s": "vim::PushSneak",
@@ -124,6 +116,7 @@
       // Git
       "space g g": "git_panel::Toggle",
       "space g l": "git_graph::Open",
+      "space t t": "terminal_panel::Toggle",
     },
   },
   {
