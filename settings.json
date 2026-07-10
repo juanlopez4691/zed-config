@@ -27,6 +27,7 @@
     "inline_blame": {
       "enabled": true,
       "delay_ms": 600,
+      "location": "status_bar",
     },
   },
   "diff_view_style": "split",
